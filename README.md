@@ -1,6 +1,6 @@
 # Battery Smart Auto-QA & Coaching System
 
-![Project Banner](public/logo.png) *<!-- Add a project banner or logo here if available -->*
+![Project Banner](public/callguard.png) *<!-- Add a project banner or logo here if available -->*
 
 ## 🚀 Overview
 
