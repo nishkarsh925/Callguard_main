@@ -47,13 +47,13 @@ This solution transforms subjective manual reviews into objective, data-driven p
 
 ```mermaid
 graph TD
-    Client[React Frontend] -->|Upload Audio| API[FastAPI Backend]
-    API -->|Trim Silence| AudioProc[Audio Processor]
-    AudioProc -->|Transcribe & Diarize| STT[Whisper + Pyannote]
-    STT -->|Transcript| NLP[NLP Processor]
-    NLP -->|Text Segments| SOP[SOP Engine]
-    SOP -->|Evaluate Rules| LLM[LLM Service (Gemini)]
-    LLM -->|Scoring & Insights| DB[(Firebase Firestore)]
+    Client["React Frontend"] -->|Upload Audio| API["FastAPI Backend"]
+    API -->|Trim Silence| AudioProc["Audio Processor"]
+    AudioProc -->|Transcribe & Diarize| STT["Whisper + Pyannote"]
+    STT -->|Transcript| NLP["NLP Processor"]
+    NLP -->|Text Segments| SOP["SOP Engine"]
+    SOP -->|Evaluate Rules| LLM["LLM Service (Gemini)"]
+    LLM -->|Scoring & Insights| DB[("Firebase Firestore")]
     DB -->|Dashboard Data| Client
 ```
 
