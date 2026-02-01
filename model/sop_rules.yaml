@@ -1,0 +1,38 @@
+sentiments:
+  negative:
+  - angry
+  - frustrated
+  - bad service
+  - not working
+  - useless
+  positive:
+  - happy
+  - satisfied
+  - thank you
+  - great
+  - helpful
+  risk_keywords:
+  - legal
+  - court
+  - police
+  - refund immediately
+  - shut down
+sop_rules:
+  Ask:
+    steps:
+    - internal_intent: Establish initial customer contact with a greeting.
+      suggestion: 'Welcome to battery '
+      text: 'Agent should greet '
+    weight: 10
+  Greet:
+    steps:
+    - internal_intent: Gather customers purpose for contacting support.
+      suggestion: how can i help you?
+      text: 'Agent should ask the reason behind calling or any query '
+    weight: 10
+  end:
+    steps:
+    - internal_intent: Terminate the customer interaction session.
+      suggestion: good bye , have a nice day
+      text: Agent should close the conversation
+    weight: 10
